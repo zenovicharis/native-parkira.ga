@@ -1,4 +1,5 @@
 <ActionBar title="ParkiraGa" actionBarHidden="true"></ActionBar>
+
 <StackLayout orenatiton="vertical">
     
           <Image src="~/images/parking-logo.png" stretch="none" horizontalAlignment="center"></Image>
@@ -7,6 +8,6 @@
           <TextField hint="Password" secure="true" [(ngModel)]="user.password"></TextField>
     
           <Button text="Sign in" class="submit-button" (tap)="submit()"></Button>
-          <Button text="Sign up" class="submit-button-signup"></Button>
+          <Button text="Sign up" class="submit-button-signup" (tap)="signUp()"></Button>
           
 </StackLayout>
