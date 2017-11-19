@@ -1,0 +1,14 @@
+Image {
+    margin-top: 5;
+    margin-bottom: 2;
+  }
+  Button, TextField {
+    margin-left: 15;
+    margin-right: 15;
+    margin-bottom: 5;
+  }
+  .submit-button {
+    background-color:	#1d95df;
+    color: white;
+    margin-top: 5;
+  }
