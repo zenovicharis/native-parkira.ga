@@ -1,12 +1,23 @@
 import { Component } from "@angular/core";
+import { User } from "./shared/user/user";
 
 @Component({
   selector: "my-app",
-  template: `
-    <ActionBar title="My App" class="action-bar"></ActionBar>
-    <!-- Your UI components go here -->
-  `
+  templateUrl:'pages/login/login.html',
+  styleUrls: ["pages/login/login.css"]
 })
+
 export class AppComponent {
-  // Your TypeScript logic goes here
+    user: User;
+
+      constructor() {
+        this.user = new User();
+      }
+
+    submit() {
+
+      alert("radi! Evo ga username i password " + this.user.username + ' ' + this.user.password);
+
+    }
+
 }
