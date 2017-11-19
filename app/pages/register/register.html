@@ -1,0 +1,14 @@
+<ActionBar title="ParkiraGa" actionBarHidden="true"></ActionBar>
+
+<StackLayout orenatiton="vertical">
+    
+          <Image src="~/images/parking-logo.png" stretch="none" horizontalAlignment="center"></Image>
+    
+          <TextField hint="Username" [(ngModel)]="user.username" autocorrect="false" autocapitalizationType="none"></TextField>
+          <TextField hint="Email" [(ngModel)]="user.email" autocorrect="false"  keyboardType="email"  autocapitalizationType="none"></TextField>
+          <TextField hint="Password" secure="true" [(ngModel)]="user.password"></TextField>
+    
+          <Button text="Sign up" class="submit-button" (tap)="register()"></Button>
+          
+          
+</StackLayout>
