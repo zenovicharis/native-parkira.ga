@@ -18,6 +18,7 @@ export class LoginComponent {
     submit() {
 
       alert("radi! Evo ga username i password " + this.user.username + ' ' + this.user.password);
+      this.router.navigate(['/home'])
 
     }
 
