@@ -7,3 +7,8 @@ Page {
 TextField {
     padding: 10;
 }
+
+ActionBar {
+    background-color: white;
+    color:#1d95df;
+}
